@@ -1,5 +1,10 @@
+/******************
+Name:
+ID:
+Assignment: ex2
+*******************/
+
 #include <stdio.h>
-#include <string.h>
 
 char brands[5][15] = {"Toyoga", "HyunNight", "Mazduh", "FolksVegan", "Key-Yuh"};
 char types[4][10] = {"SUV", "Sedan", "Coupe", "GT"};
