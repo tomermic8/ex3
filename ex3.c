@@ -15,6 +15,7 @@ Assignment: ex3
 char brands[NUM_OF_BRANDS][BRANDS_NAMES] = {"Toyoga", "HyunNight", "Mazduh", "FolksVegan", "Key-Yuh"};
 char types[NUM_OF_TYPES][TYPES_NAMES] = {"SUV", "Sedan", "Coupe", "GT"};
 
+const int addOne = 1, addAll = 2, stats = 3, print = 4, insights = 5, deltas = 6, done = 7;
 
 void printMenu(){
     printf("Welcome to the Cars Data Cube! What would you like to do?\n"
@@ -34,7 +35,6 @@ int main() {
     int choice;
     printMenu();
     scanf("%d", &choice);
-    int addOne = 1, addAll = 2, stats = 3, print = 4, insights = 5, deltas = 6, done = 7;
     while(choice != done){
         switch(choice){
             case addOne:
