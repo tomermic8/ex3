@@ -28,13 +28,13 @@ int main() {
     int choice;
     printMenu();
     scanf("%d", &choice);
-
-    while(choice != 7){
+    int addOne = 1, addAll = 2, stats = 3, print = 4, insights = 5, deltas = 6, done = 7;
+    while(choice != done){
         switch(choice){
-            case 1:
+            case addOne:
                 //...
                 break;
-            case 2:
+            case addAll:
                 //...
                 break;
             /*
@@ -47,8 +47,6 @@ int main() {
         scanf("%d", &choice);
     }
     printf("Goodbye!\n");
-    return 0;
-
     return 0;
 }
 
