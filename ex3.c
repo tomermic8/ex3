@@ -1,13 +1,19 @@
 /******************
 Name:
 ID:
-Assignment: ex2
+Assignment: ex3
 *******************/
 
 #include <stdio.h>
 
-char brands[5][15] = {"Toyoga", "HyunNight", "Mazduh", "FolksVegan", "Key-Yuh"};
-char types[4][10] = {"SUV", "Sedan", "Coupe", "GT"};
+#define NUM_OF_BRANDS 5
+#define BRANDS_NAMES 15
+#define NUM_OF_TYPES 4
+#define TYPES_NAMES 10
+#define DAYS_IN_YEAR 365
+
+char brands[NUM_OF_BRANDS][BRANDS_NAMES] = {"Toyoga", "HyunNight", "Mazduh", "FolksVegan", "Key-Yuh"};
+char types[NUM_OF_TYPES][TYPES_NAMES] = {"SUV", "Sedan", "Coupe", "GT"};
 
 
 void printMenu(){
@@ -23,8 +29,8 @@ void printMenu(){
 
 
 int main() {
-    int cube[365][5][4];
-    int days[5] = {0};
+    int cube[DAYS_IN_YEAR][NUM_OF_BRANDS][NUM_OF_TYPES];
+    int days[NUM_OF_BRANDS] = {0};
     int choice;
     printMenu();
     scanf("%d", &choice);
