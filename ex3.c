@@ -11,11 +11,17 @@ Assignment: ex3
 #define NUM_OF_TYPES 4
 #define TYPES_NAMES 10
 #define DAYS_IN_YEAR 365
+#define addOne  1
+#define addAll  2  
+#define stats  3
+#define print  4
+#define insights  5
+#define deltas  6
+#define done  7
 
 char brands[NUM_OF_BRANDS][BRANDS_NAMES] = {"Toyoga", "HyunNight", "Mazduh", "FolksVegan", "Key-Yuh"};
 char types[NUM_OF_TYPES][TYPES_NAMES] = {"SUV", "Sedan", "Coupe", "GT"};
 
-const int addOne = 1, addAll = 2, stats = 3, print = 4, insights = 5, deltas = 6, done = 7;
 
 void printMenu(){
     printf("Welcome to the Cars Data Cube! What would you like to do?\n"
